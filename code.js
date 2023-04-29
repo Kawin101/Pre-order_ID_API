@@ -17,7 +17,7 @@ function generateAndSaveIds() {
 
   var newNumber = lastNumber + 1; // generate the next number in sequence
   var newId = idPrefix + padNumberWithZeros(newNumber, idLength); // create the new ID with the next number
-  
+  console.log(newId);
   sheet.appendRow([newId]); // add the new ID to the sheet
 }
 
@@ -26,6 +26,5 @@ function padNumberWithZeros(number, length) {
   while (paddedNumber.length < length) {
     paddedNumber = "0" + paddedNumber;
   }
-  console.log(paddedNumber);
   return paddedNumber;
 }
