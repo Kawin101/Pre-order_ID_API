@@ -1,5 +1,5 @@
 function generateAndSaveIds() {
-  var sheet = SpreadsheetApp.openById("1fKCbWeAwrbpICkqVHMI9cJwHQupxfOBeEEwd1KL-Xzs").getSheetByName("Sheet1"); // Change "Sheet1" to the name of your sheet
+  var sheet = SpreadsheetApp.openById("SHEET-YOUR-ID").getSheetByName("Sheet1"); // Change "Sheet1" to the name of your sheet
   // var sheet = SpreadsheetApp.getActive().getSheetByName("Sheet1"); // Change "Sheet1" to the name of your sheet
   var idPrefix = "PR-";
   var idLength = 4;
